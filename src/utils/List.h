@@ -37,8 +37,31 @@ public:
         }
     }
 
+    /**
+     * Método que retorna a quantidade de items na lista
+     * @return Tamanho da lista
+     */
     int size() {
         return elements.size();
+    }
+
+    /**
+     * Método que limpa a lista
+     */
+    void clear() {
+        elements.clear();
+    }
+
+    /**
+     * Remove um elemento da lista pelo seu indice
+     * @param index Indice do elemento a ser removido
+     */
+    void remove(int index) {
+        if (index >= 0 && index < elements.size()) {
+            elements.erase(elements.begin() + index);
+        } else {
+            throw std::out_of_range("Índice fora dos limites da lista");
+        }
     }
 };
 
