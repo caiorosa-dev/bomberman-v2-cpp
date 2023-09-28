@@ -6,7 +6,7 @@
 #define BOMBERVALI_ENTITY_H
 
 class Entity {
-private:
+protected:
     int row, column;
 
 public:
