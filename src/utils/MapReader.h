@@ -8,11 +8,11 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
-#include "../base/Map.h"
+#include "../base/GameMap.h"
 #include "StringUtils.h"
 
 namespace MapReader {
-    Map readFromFile(const string& fileName) {
+    GameMap readFromFile(const string& fileName) {
         ifstream file;
 
         int rows = 0, columns = 0;
@@ -51,7 +51,7 @@ namespace MapReader {
             loadedTiles.push_back(columnVector);
         }
 
-        Map newMap(rows, columns, loadedTiles);
+        GameMap newMap(rows, columns, loadedTiles);
 
         return newMap;
     }

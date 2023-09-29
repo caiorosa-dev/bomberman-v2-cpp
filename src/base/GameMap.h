@@ -2,8 +2,8 @@
 // Created by caior on 28/09/2023.
 //
 
-#ifndef BOMBERVALI_MAP_H
-#define BOMBERVALI_MAP_H
+#ifndef BOMBERVALI_GAMEMAP_H
+#define BOMBERVALI_GAMEMAP_H
 
 #include <utility>
 #include <vector>
@@ -11,13 +11,13 @@
 
 using namespace std;
 
-class Map {
+class GameMap {
 private:
     int rows, columns;
     vector<vector<int>> tiles;
 
 public:
-    Map(int rows, int columns, vector<vector<int>> tiles) {
+    GameMap(int rows, int columns, vector<vector<int>> tiles) {
         this->rows = rows;
         this->columns = columns;
         this->tiles = std::move(tiles);
@@ -36,4 +36,4 @@ public:
     }
 };
 
-#endif //BOMBERVALI_MAP_H
+#endif //BOMBERVALI_GAMEMAP_H
