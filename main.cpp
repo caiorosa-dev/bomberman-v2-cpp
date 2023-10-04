@@ -1,8 +1,8 @@
 #include <iostream>
-#include "src/base/Map.h"
+#include "src/base/GameMap.h"
 #include "src/utils/MapReader.h"
 int main() {
-    Map mapa = MapReader::readFromFile("../assets/maps/test_map_v1.csv");
+    GameMap mapa = MapReader::readFromFile("../assets/maps/test_map_17x17.csv");
 
     cout << mapa.getRows();
 
