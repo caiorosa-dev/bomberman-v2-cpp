@@ -1,0 +1,8 @@
+//
+// Created by Jordan on 10/10/2023.
+//
+
+#ifndef BOMBERVALI_MAPRENDER_H
+#define BOMBERVALI_MAPRENDER_H
+
+#endif //BOMBERVALI_MAPRENDER_H
