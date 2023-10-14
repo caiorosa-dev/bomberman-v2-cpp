@@ -8,17 +8,19 @@
 #include <iostream>
 #include "../base/LivedEntity.h"
 
+using namespace std;
+
 class Player: public LivedEntity {
 public:
     Player(int row, int column) : LivedEntity(row, column) {
         std::cout << "Renderizado";
     }
 
-    void tick() override {
+    void tick(int clickedKey) override {
         std::cout << "Ola mundo, do Tick Player";
     }
 
-    void render() override {
+    void render(int renderingRow, int renderingColumn) override {
         std::cout << "Ola mundo, do Render Player";
     }
 };

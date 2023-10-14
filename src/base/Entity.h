@@ -15,8 +15,8 @@ public:
         this->column = column;
     }
 
-    virtual void tick() {}
-    virtual void render() {};
+    virtual void tick(int clickedKey) {}
+    virtual void render(int renderingRow, int renderingColumn) {};
 
     int getRow() const {
         return row;

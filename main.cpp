@@ -1,6 +1,7 @@
 #include <iostream>
 #include "src/base/GameMap.h"
 #include "src/utils/MapReader.h"
+
 int main() {
     GameMap mapa = MapReader::readFromFile("../assets/maps/test_map_21x21NEW.csv");
 
@@ -11,7 +12,6 @@ int main() {
             int valor = mapa.getTiles()[rows][columns];
 
             cout << valor << " ";
-
         }
         cout<<endl;
     }
